@@ -133,6 +133,12 @@ Start docker-compose with
 docker-compose -f kogito-examples/trusty-demonstration/docker-compose/docker-compose.yaml up
 ```
 
+Copy the generated grafana dashboards to the `docker-compose/grafana` folder
+
+```bash
+cp target/classes/META-INF/resources/monitoring/dashboards/* kogito-examples/trusty-demonstration/docker-compose/grafana/provisioning/dashboards/
+```
+
 ## Step 6 - execute some requests and check the trusty console
 
 Open the kogito application swagger-ui at `localhost:8080/q/swagger-ui` and send a POST request to the endpoint `myMortgage` with the following payload
