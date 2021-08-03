@@ -93,6 +93,10 @@ and add the following dependencies in the `pom.xml` file
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-openapi</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>kogito-addons-quarkus-monitoring-prometheus</artifactId>
+    </dependency>
 ```
 
 Add the following property in the `application.properties` file so to get the nice swagger-ui
