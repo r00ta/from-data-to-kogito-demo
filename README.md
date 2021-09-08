@@ -121,20 +121,20 @@ docker build -f src/main/docker/Dockerfile.jvm -t quay.io/jrota/pmml-kogito:1.0 
 
 ## Step 5 - Deploy the kogito application with the trustyAI infra
 
-Clone the `kogito-examples` repository and checkout the release branch `1.8.x`
+Clone the `kogito-examples` repository and checkout the release branch `1.9.0.Final`
 
 ```bash
 git clone https://github.com/kiegroup/kogito-examples.git
-git checkout 1.8.x
+git checkout 1.9.0.Final
 ```
 
-open the file `kogito-examples/trusty-demonstration/docker-compose/docker-compose.yaml` and replace the `kogito-app` image with `quay.io/jrota/pmml-kogito:1.0`. 
+open the file `kogito-examples/trusty-demonstration/docker-compose/docker-compose.yml` and replace the `kogito-app` image with `quay.io/jrota/pmml-kogito:1.0`. 
 
 Stop the business central container so to free the `8080` port. 
 Start docker-compose with 
 
 ```bash
-docker-compose -f kogito-examples/trusty-demonstration/docker-compose/docker-compose.yaml up
+docker-compose -f kogito-examples/trusty-demonstration/docker-compose/docker-compose.yml up
 ```
 
 Copy the generated grafana dashboards to the `docker-compose/grafana` folder
