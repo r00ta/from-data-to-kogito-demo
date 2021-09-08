@@ -134,7 +134,7 @@ Stop the business central container so to free the `8080` port.
 Start docker-compose with 
 
 ```bash
-docker-compose -f kogito-examples/trusty-demonstration/docker-compose/docker-compose.yaml up
+docker-compose -f kogito-examples/trusty-demonstration/docker-compose/docker-compose.yml up
 ```
 
 Copy the generated grafana dashboards to the `docker-compose/grafana` folder
